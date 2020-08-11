@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Login</title>
+    </head>
+    <body>
+        <h1>Sign up successful</h1>
+        <div class="select2-container">
+            <h2>Login Here</h2>
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+            </form>
+        </div>
+        <input type="submit" class="button" value="Login">
+    </body>
+</html>
